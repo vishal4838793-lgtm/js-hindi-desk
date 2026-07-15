@@ -1,28 +1,12 @@
-const arr = [1, 2, 3, 4, 5]
-for (const num  of arr) {
-    // console.log(num); 
-}
-
-const greetings = "Hello world"
-for (const greet of greetings) {
-    // console.log(greet);
-}
-
-const map = new Map()
-map.set('IN', "India")
-map.set('USA', "United state Of America")
-map.set('Fr', "France")
-
-// console.log(map);
-for (const [key,value] of map) {
-    console.log(key,":-",value);    
-}
-
 const myObject = {
-    game1: "Gta5",
-    game2: "Spiderman"
+    js: "JavaScript",
+    cpp: "C++",
+    rb: "Ruby"
 }
-
-for (const [key, value] of myObject) {
-    console.log(key, ":-",value);    
+for (const key in myObject) {
+   console.log(`${key} is used for shortcut of ${myObject[key]}`); 
+}
+const programming = ["js", "c++", "py", "java"]
+for (const key in programming) {
+    console.log(programming[key]);    
 }
